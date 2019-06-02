@@ -1,0 +1,30 @@
+{
+  "name": "webdb-challenge",
+  "description": "This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "knex-cleaner": "^1.1.4",
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalAsh/webdb-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digitalAsh/webdb-challenge/issues"
+  },
+  "homepage": "https://github.com/digitalAsh/webdb-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "knex": "^0.17.2",
+    "sqlite3": "^4.0.8"
+  }
+}
