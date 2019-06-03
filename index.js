@@ -1,19 +1,10 @@
-const express = require('express');
-const helmet = require('helmet');
-const knex = require('knex');
+require('dotenv').config();
+console.log('process env', process.env);
 
-const knexConfig = {
-  client: 'sqlite3',
-  connection: {
-    filename: './data/projectTracker.sqlite3'
-  },
-  useNullAsDefault: true,
-  debug: true
-};
+const server = require('./server.js');
 
-const db = knex(knexConfig);
+const PORT = process.env.PORT || 4000;
 
-const server = express();
-
-server.use(express.json());
-server.use(helmet());
+server.listen(PORT, () => {
+    console.log(`\n* Server Running on PORT ${PORT} *\n`);
+});
