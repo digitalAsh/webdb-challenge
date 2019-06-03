@@ -9,7 +9,7 @@ router.use((req, res, next) => {
     next();
   })
 
-router.get('/', async (req, res) => {
+router.get('/:id', async (req, res) => {
   try {  
     const projects = await Projects.get();
     res.status(200).json(projects);

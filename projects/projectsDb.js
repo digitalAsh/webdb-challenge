@@ -9,7 +9,10 @@ module.exports = {
 };
 
 function get(id) {
-    return db('projects')  
+    return db('projects')
+        .from('projects')
+       .join('actions')
+    //    , 'projects.id', 'actions.project.id')
   }
   
   function getById(id) {
