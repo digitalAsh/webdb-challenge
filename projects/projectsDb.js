@@ -8,8 +8,8 @@ module.exports = {
   remove,
 };
 
-function get() {
-    return db('projects');
+function get(id) {
+    return db('projects')  
   }
   
   function getById(id) {
